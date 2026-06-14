@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prem Fashion Studio | Trendy & Modern Outfits</title>
+    
+    <!-- Yahan aap apna Pinterest Verification Tag paste kar sakte hain -->
+    <!-- <meta name="p:domain_verify" content="PINTEREST_CODE_HERE"/> -->
+
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #fcfcfc;
+            color: #333;
+        }
+        a {
+            text-style: none;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #fff;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #111;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 25px;
+        }
+        nav ul li a {
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff4757;
+        }
+
+        /* Hero Banner Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        .hero .btn {
+            background-color: #fff;
+            color: #111;
+            padding: 12px 35px;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        .hero .btn:hover {
+            background-color: #ff4757;
+            color: #fff;
+        }
+
+        /* Categories / Collection Section */
+        .section-title {
+            text-align: center;
+            margin: 60px 0 30px;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 3px;
+            background-color: #ff4757;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .collections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 0 10%;
+            margin-bottom: 60px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 15px 0 10px;
+            font-size: 20px;
+        }
+        .card p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+            padding: 0 15px;
+        }
+
+        /* Contact & Pinterest Section */
+        .connect {
+            background-color: #f1f2f6;
+            padding: 60px 10%;
+            text-align: center;
+        }
+        .connect p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #555;
+        }
+        .pinterest-btn {
+            background-color: #bd081c;
+            color: #fff;
+            padding: 12px 30px;
+            font-weight: bold;
+            border-radius: 50px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        .pinterest-btn:hover {
+            background-color: #ad0616;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">Prem Studio</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#connect">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <h1>Discover Your Unique Style</h1>
+        <p>Explore the latest trends in modern & street fashion aesthetics.</p>
+        <a href="#collections" class="btn">View Collection</a>
+    </section>
+
+    <!-- Main Collections -->
+    <div id="collections"><h2 class="section-title">Our Collections</h2></div>
+    <section class="collections">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=80" alt="Oversized Hoodies">
+            <h3>Streetwear Aesthetics</h3>
+            <p>Comfy oversized hoodies, baggy cargo jeans, and bold statement pieces.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=500&q=80" alt="Casual Wear">
+            <h3>Minimalist Casuals</h3>
+            <p>Clean lines, neutral tones, and effortless everyday styles.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=500&q=80" alt="Accessories">
+            <h3>Trendy Accessories</h3>
+            <p>Complete your outfit with square-frame sunglasses and aesthetic add-ons.</p>
+        </div>
+    </section>
+
+    <!-- Pinterest Connect Section -->
+    <section class="connect" id="connect">
+        <h2>Follow Us On Pinterest</h2>
+        <p>Get daily outfit inspirations, styling tips, and lookbooks straight to your feed.</p>
+        <!-- Yahan # ki jagah apne Pinterest account ka link daalein -->
+        <a href="#" target="_blank" class="pinterest-btn">Visit Our Pinterest</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Prem Fashion Studio. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
